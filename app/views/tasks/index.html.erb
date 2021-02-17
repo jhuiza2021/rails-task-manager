@@ -8,9 +8,9 @@
     <% else %>
       <li><input type="checkbox"><%= link_to task.title, task_path(task) %></li>
     <% end %>
-    <%= link_to  "borrar", task_path(task), method: :delete, data: {confirm: "Are you sure!"} %>
+    <%= link_to  "✂", task_path(task), method: :delete, data: {confirm: "Are you sure!"} %>
   <% end %> 
 
 </ul>
 
-<%= link_to "create new task", tasks_new_path%>
+<h2><%= link_to "create new task", tasks_new_path%></h2>

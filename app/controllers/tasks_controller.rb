@@ -5,7 +5,7 @@ class TasksController < ApplicationController
   def show
     @task = Task.find(params[:id])
   end
-    def new
+  def new
     @task = Task.new # needed to instantiate the form_for
   end
   def create
