@@ -1,0 +1,15 @@
+
+
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+
+<% if @task.completed == true %>
+    <p><input type="checkbox" checked>Esta tarea esta completada</p>
+    <% else %>
+    <p><input type="checkbox">Esta tarea NO esta completada</p>
+<% end %>
+
+<%= link_to "back to Tareas", tasks_path%>
+
+<%= link_to "Editar esta tarea", edit_task_path%>
+
